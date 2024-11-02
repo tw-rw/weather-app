@@ -17,7 +17,7 @@ time.innerHTML = `${day} ${hr}:${min}`;
 
 function showCity(event) {
   event.preventDefault();
-  let input = document.querySelector(".search-input");
+  let input = document.querySelector(".search");
   let city = document.querySelector(".current-city");
   city.innerHTML = input.value;
 }
@@ -36,7 +36,7 @@ function showUser(response) {
 
 function search(event) {
   event.preventDefault();
-  let cityValue = document.querySelector(".search-input");
+  let cityValue = document.querySelector(".search");
   let city = cityValue.value;
 
   let apiKey = "44f7a844ccaae8fbao1218t90975e873";
